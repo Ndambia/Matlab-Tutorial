@@ -1,5 +1,4 @@
-%% SESSION 2.6: GUIDED EXERCISES
-% Students should attempt these before opening the solutions file.
+%% SESSION 2.6: 
 
 clc;
 clear;
