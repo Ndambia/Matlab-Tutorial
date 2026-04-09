@@ -1,5 +1,5 @@
 %% SESSION 2.3: GENERATE SAMPLE DATASET
-% This script creates a realistic sample CSV dataset for classroom use.
+
 
 clc;
 clear;

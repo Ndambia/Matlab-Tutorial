@@ -9,7 +9,7 @@ disp('SESSION 2.1: CONDITIONAL STATEMENTS');
 disp('-----------------------------------');
 
 %% Example 1: Battery voltage classification
-battery_voltage = 11.6;
+battery_voltage = 13;
 
 if battery_voltage < 11.5
     status = 'LOW';
