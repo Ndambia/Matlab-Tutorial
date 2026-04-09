@@ -31,7 +31,7 @@ fprintf('Speed mean       = %.3f rpm\n', mean(speed));
 fprintf('Vibration mean   = %.3f mm/s\n', mean(vibration));
 
 %% Simple moving average smoothing
-window = 10;
+window = 5;
 temperature_smooth = movmean(temperature, window);
 vibration_smooth = movmean(vibration, window);
 

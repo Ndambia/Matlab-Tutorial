@@ -18,8 +18,8 @@ for k = 1:length(R_values)
     I_values(k) = V / R_values(k);
 end
 
-disp('Current values from for-loop:');
-disp(table(R_values', I_values', 'VariableNames', {'Resistance_Ohm', 'Current_A'}));
+figure;
+plot(R_values, I_values, '-x', 'LineWidth', 1.5);s
 
 %% Example 2: Build a time vector manually
 dt = 0.1;
@@ -46,7 +46,7 @@ end
 fprintf('Reached speed %.1f after %d increments.\n', speed, count);
 
 %% Example 4: Generate a table of squared values
-n_values = 1:10;
+n_values = 1:100;
 square_values = zeros(size(n_values));
 
 for k = 1:length(n_values)

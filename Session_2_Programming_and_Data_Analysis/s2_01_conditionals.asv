@@ -11,12 +11,10 @@ disp('-----------------------------------');
 %% Example 1: Battery voltage classification
 battery_voltage = 10;
 
-if battery_voltage > 10
-    status = 'nominal';
-elseif battery_voltage >= 12.5
+if battery_voltage < 11.5
+    status = 'LOW';
+elseif battery_voltage <= 12.5
     status = 'NORMAL';
-elseif battery_voltage == 10
-    status = 'DEAD';
 else
     status = 'HIGH';
 end
