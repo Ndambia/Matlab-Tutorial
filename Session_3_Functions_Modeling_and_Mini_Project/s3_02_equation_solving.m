@@ -27,6 +27,7 @@ figure;
 plot(x, y, 'LineWidth', 1.5);
 hold on;
 yline(0, '--');
+xline(0, '--');
 plot(root1, 0, 'o', 'MarkerSize', 8);
 plot(root2, 0, 'o', 'MarkerSize', 8);
 plot(root3, 0, 'o', 'MarkerSize', 8);

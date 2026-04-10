@@ -1,5 +1,4 @@
 %% SESSION 3.5: GUIDED EXERCISES
-% Students should attempt these tasks before opening the solutions file.
 
 clc;
 clear;
@@ -14,4 +13,4 @@ disp('Exercise 3: Use fzero to solve x^2 - 5 = 0.');
 disp('Exercise 4: Generate a noisy 10 Hz sine wave and smooth it.');
 disp('Exercise 5: Compute the RMS of the original and filtered signal.');
 disp(' ');
-disp('Open s3_06_exercise_solutions.m after attempting the work.');
+

@@ -1,5 +1,5 @@
 %% SESSION 3.1: FUNCTION BASICS
-% Demonstrates calling user-defined functions.
+
 
 clc;
 clear;
