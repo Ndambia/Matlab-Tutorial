@@ -1,6 +1,5 @@
 %% SESSION 3.4: SIGNAL ANALYSIS MINI PROJECT
-% This mini project creates a signal, adds noise, smooths it, and compares
-% time-domain and frequency-domain views.
+
 
 clc;
 clear;

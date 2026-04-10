@@ -5,8 +5,7 @@ clc;
 clear;
 close all;
 
-disp('SESSION 3.3: RC CIRCUIT MODELING');
-disp('--------------------------------');
+
 
 t = 0:0.001:1.5;
 Vin = 5;
