@@ -7,35 +7,17 @@ close all;
 
 
 
-t = 0:0.001:1.5;
-Vin = 5;
+x=np.linspace(0.01,2,500);
+y=x*np.log(x);
 
-R1 = 1000;    C1 = 100e-6;
-R2 = 2200;    C2 = 100e-6;
-R3 = 1000;    C3 = 330e-6;
+x1,x2=0.5,1.5;
+y1,y2=x1*.log(x1),x2*np.log(x2);
 
-vc1 = rc_response(t, R1, C1, Vin);
-vc2 = rc_response(t, R2, C2, Vin);
-vc3 = rc_response(t, R3, C3, Vin);
+m=(y2-y1)/(x2-x1);
+c=y1-m*x1;
 
 figure;
-plot(t, vc1, 'LineWidth', 1.5);
-hold on;
-plot(t, vc2, 'LineWidth', 1.5);
-plot(t, vc3, 'LineWidth', 1.5);
-xlabel('Time (s)');
-ylabel('Capacitor Voltage (V)');
-title('Effect of R and C on RC Charging Response');
-legend('R=1k, C=100uF', 'R=2.2k, C=100uF', 'R=1k, C=330uF');
-grid on;
-
-tau1 = R1*C1;
-tau2 = R2*C2;
-tau3 = R3*C3;
-
-fprintf('Time constants:\n');
-fprintf('tau1 = %.4f s\n', tau1);
-fprintf('tau2 = %.4f s\n', tau2);
-fprintf('tau3 = %.4f s\n', tau3);
-
-disp('Larger time constant means slower charging.');
+plt.plot(x,y,label='f(x)=xlogx');
+plt.plot(x,m*x+c,'--',label='Secant');
+plt.scatter([x1,x2],[y1,y2]);
+plt.show();
